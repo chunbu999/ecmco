@@ -1,0 +1,251 @@
+.weui-tab__b{
+	padding: 1rem;
+}
+.titleColor{
+	color: #DDB86A;
+	margin-left: 0.2rem;
+	margin-right: 6px;
+}
+.indexTitle{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	padding-top: 24px;
+}
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
+	color: #999999 !important;
+}
+.indexTitle>img{
+	width: 16px;
+	height: 28px;
+}
+.imgNumber{
+	font-size: 31px;
+}
+.weui-media-box_appmsg .weui-media-box__thumb{
+	border-radius: 50%;
+}
+.flexslider{
+	border: none;
+	width: 100%;
+	height: 10rem;
+	margin: 0 0 1.25rem;
+	background: transparent;
+}
+.flexslider .slides img{
+	width: 100%;
+	height: 10rem;
+}
+.swiper-container {
+    width: 100%;
+    margin-top: 1rem;
+} 
+.hiddens{
+	display: none;
+}
+/*.swiper-wrapper{
+	padding: 0.6rem 0;
+}*/
+.swiper-container img {
+    display: block;
+    width: 100%;
+}
+.imgTxt,.ranking{
+	text-align: center;
+	position: absolute;
+	top: 0.4rem;
+	width: 100%;
+	z-index: 9999;
+	padding-bottom: 10px;
+}
+.imgTxt h3{
+	color: #0A59DA;
+	font-weight: 500;
+	font-size: 18px;
+	padding-top: 0.2rem;
+}
+.imgTxt h3>span{
+	color: #F4E71B !important;
+}
+.imgTotol{
+	font-size: 12px;
+	color: #FFB82F;
+	margin-top: 0.2rem;
+}
+.personBox{
+	background-color: #152339;
+	border-radius: 6px;
+	margin-top: 15px;	
+}
+.personBox>a.weui-media-box {
+	border-radius: 6px;
+}
+.assetBox{
+	padding: 0.9rem;
+}
+.assetBox>p img{
+	width: 14px;
+	height: 15px;
+}
+.assetBox>p{
+	font-size: 15px;
+}
+.assetBox>p i{
+	font-style: inherit;
+	font-size: 12px;
+	margin-left: 4px;
+}
+.myAssets{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 0.6rem;
+}
+.myAssets img{
+	margin-right: 5px;
+}
+.myAssets .pool{
+	color: #999999;
+	font-size: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.myAssets .pool img{
+	width: 14px;
+	height: 14px;
+}
+.myAssets h2{
+	font-size: 18px;
+	margin-top: 15px;
+	text-align: center;
+}
+.weui-media-box_appmsg h4{
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.superNode{
+	color: #FFBA13 !important;
+	font-size: 15px;
+}
+
+.myAssets>span{
+	display: inline-block;
+	border: 1px dashed #282D34;
+}
+.community{
+	text-align: center;
+	border-bottom: 1px solid #203353;
+	padding: 0.6rem 0 0.9rem 0;
+}
+.community>h4{
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+.community ul,.selfNum ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center !important;
+	align-items: center !important;
+	margin: 0.6rem 0;
+}
+#userHead{
+	border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+/*.selfNum ul{
+	
+}*/
+.community ul li,.selfNum ul li{
+	background: -moz-linear-gradient(top, #0A1323 0%, #243D66 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0A1323), color-stop(100%,#243D66));
+    background: -webkit-linear-gradient(top, #0A1323 0%,#243D66 100%);
+    background: -o-linear-gradient(top, #0A1323 0%,#243D66 100%);
+    background: -ms-linear-gradient(top, #0A1323 0%,#243D66 100%);
+    background: linear-gradient(to bottom, #0A1323 0%,#243D66 100%);
+	margin-left: 0.4rem;
+	width: 1.6rem;
+	padding: 0 !important;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	font-size: 26px;
+	text-align: center !important;
+	border-radius: 4px;
+}
+.community ul li:nth-child(1), .selfNum ul li:nth-child(1){
+	margin-left: 0;
+}
+.myCommunity{
+	text-align: center;
+	height: 3.5rem;
+	line-height: 3.5rem;
+}
+.myCommunity a{
+	color: #DDB86A;
+	font-weight: 900;
+	letter-spacing: 1px;
+	width: 100%;
+	display: block;
+	font-size: 16px;
+}
+.communBox{
+	/*padding: 10px 0;*/
+	margin-bottom: 6rem;
+}
+.perDiv,.perDiv:focus{
+	background-color: #152339 !important;
+}
+.weui-media-box__desc{
+	font-size: 13px;
+	color: #999999 !important;
+}
+.ranking ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	top: 1.2rem;
+}
+.ranking ul li{
+	width: 32%;
+	text-align: center !important;
+}
+.ranking ul li>img{
+	width: 100%;
+}
+.ranking ul li:nth-child(2){
+	position: relative;
+	top: -1rem;
+}
+.ranking ul li:nth-child(2) .brandtxt{
+	width: 100%;
+}
+.brandtxt{
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	width: 32%;
+	font-size: 14px;
+}
+.brandtxt .names{
+	color: #999999;
+}
+.brandtxt p{
+	font-size: 12px;
+}
+.check_pain{
+	color: #DDB86A;
+	border: 1px solid #DDB86A;
+	position: absolute;
+	bottom: 34px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	font-size: 14px;
+	left: 100px;
+	width: calc(100% - 200px) !important;
+}

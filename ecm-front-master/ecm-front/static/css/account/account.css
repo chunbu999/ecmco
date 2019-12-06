@@ -1,0 +1,178 @@
+.account_title{
+	width: 100%;
+	position: fixed;
+	background-color: #0D1728;
+	z-index: 999;
+}
+.account_title>h3{
+	text-align: center;
+	height: 3.4rem;
+	font-size: 20px;
+	line-height: 3.4rem;
+	padding-top: 24px;
+}
+.uidName{
+	color: #999999 !important;
+	font-size: 13px !important;
+}
+.weui-media-box__title{
+	font-size: 1.1rem;
+}
+.acounter{
+	position: relative;
+    top: 80px;
+}
+.personBox,.personBox:focus{
+	background-color:  #0D1728;
+}
+.personBox .weui-media-box_appmsg,.personBox .weui-media-box_appmsg:focus{
+	background-color:  #0D1728;
+}
+.superNode{
+	color: #F4E71B !important;
+	font-size:15px;
+}
+.weui-media-box_appmsg .weui-media-box__thumb{
+	border-radius: 50%;
+	height: 100%;
+}
+.weui-media-box_appmsg h4,.weui-media-box_appmsg p{
+	color: #FFFFFF;
+}
+.personBox .weui-media-box{
+	padding: 0 1.9rem;
+}
+.assetBox{
+	margin: 1.3rem 0.9rem;
+	background-color: #152339;
+	border-radius: 6px;
+	padding: 0.9rem;
+}
+.myAssets{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 0.6rem;
+}
+.myAssets img{
+	margin-right: 0.5rem;
+}
+.myAssets .pool{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 13px;
+}
+.myAssets .weui-btn{
+	border: 1px solid #DDB86A;
+	color: #DDB86A; 
+	width: 3.9rem;
+	height: 1.6rem;
+	line-height: 1.4rem;
+	padding: 0;
+	background-color: transparent;
+	margin-top: 1.3rem;
+	font-size: 12px;
+}
+.myAssets>span{
+	display: inline-block;
+	border: 0.5px dashed #999999;
+}
+.weui-panel{
+	background-color: #0F1B2F;
+	margin-bottom: 0.9rem;
+}
+.myAcount{
+	margin-bottom: 90px;
+}
+.weui-cell__bd{
+	margin-top: -5px;
+}
+.weui-cell_example>.weui-cell__hd{
+	width: 40px;
+}
+.weui-panel__bd a{
+	background-color: transparent !important;
+}
+.outDiv{
+	padding: 2.8rem 1.3rem 5.5rem 1.3rem ;
+}
+.outBtn{
+	/*margin: 40px 0;*/
+	width: 100%;
+	height: 2.9rem;
+	margin: 0 !important;
+	font-size: 15px;
+	/*margin: 3rem 0 3.4rem 0 !important;*/
+}
+#thressMethod>.weui-panel__bd a{
+	border-bottom: 1px solid #203353;
+}
+#thressMethod>.weui-panel__bd a:nth-last-child(1){
+	border: none;
+}
+.weui-cell__ft{
+	color: #FFFFFF;
+}
+.headerImg{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+#thressMethod .weui-cell_example{
+	position: relative;
+	top: 0;
+}
+#thressMethod input[type="radio"]{
+	height: 18px;
+	width: 18px;
+	border: 1px solid #0A59DA !important;
+	background-color: #0F1B2F !important;
+}
+.rightBox{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#thressMethod input:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 10px;
+    top: 3px;
+    left: 6px;
+    border: 2px solid #FFFFFF !important;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg)
+}
+#thressMethod input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid red;
+    text-indent: .15em;
+    line-height: 1; 
+    background-color: blue;
+    background-clip: content-box;
+    padding: .2em;
+}
+.weui-cell__hd img{
+	width: 22px;
+	height: 24px;
+}
+.pool>img,.methImg>img{
+	width: 20px;
+	height: 20px;
+}
+.weui-cell_primary>p{
+	font-size: 14px;
+}
+#weChatInput{
+	width: 100%;
+}

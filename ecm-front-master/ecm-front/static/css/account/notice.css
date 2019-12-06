@@ -1,0 +1,80 @@
+.weui-bar{
+	position: fixed;
+}
+.weui-panel,.noticeDetail{
+	background-color: transparent;
+	padding: 0 0.6rem;
+}
+.weui-panel__bd>a{
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	margin-bottom: 0.9rem;
+	padding: 15px 10px;
+	cursor: pointer;
+}
+.weui-cell .weui-cell__bd >h4{
+	margin-bottom: 0.6rem;
+}
+.time{
+	color: #999999;
+	font-size: 14px;
+}
+.noticeDetail>h3{
+	text-align: center;
+	margin-top: 1.3rem;
+}
+.noticeDetail>p{
+	width: 100%;
+	text-align: right;
+}
+.content{
+	text-indent: 2em;
+	margin-top: 1.3rem;
+	font-size: 12px;
+	margin-bottom: 1.3rem;
+}
+.weui-cell_primary{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.myAssets{
+	position: absolute;
+	top: 90px;
+	width: 100%;
+	height: 100%;	
+    margin-bottom: 25px;
+    
+    height: 100%;
+    overflow: auto; 
+    /*overflow: hidden;*/
+}
+#thressMethod{
+    padding: 0 0.9rem 20px 0.9rem;
+}
+.weui-panel:after{
+	border: none;
+}
+.noContent{
+	width: 160px;
+	
+}
+.noContent p{
+	width: 160px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+.weui-loadmore__tips{
+	color: #FFFFFF;
+}
+
+.content img{
+	width: 100%;
+	height: 100%;
+	display:block;
+}
+.noticeDetail{
+	margin-top: 85px;
+}

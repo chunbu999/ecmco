@@ -1,0 +1,109 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100% !important;
+}
+#demo{
+	position: relative;
+	height: 100% !important;
+	width: 100%;
+}
+#de{
+	width: 100%;
+	height: 100% !important; 
+	display: block;
+	margin: 0;
+	position: absolute;
+	background: url(../../images/haibao_di.png) no-repeat;
+	background-size: 100% 100%;
+}
+.hold{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.bgImg{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.bgImg img{
+	width: 100%;
+	display: block;
+}
+.shareImg{
+	width: 100%;
+	position: relative;
+	top: 3rem;
+	height: 2rem;
+	padding: 0;
+	margin: 0;
+	right: 0;
+}
+.shareImg>img{
+	position: absolute;
+	top: 0;
+	right: 1.3rem;
+}
+.bottomDiv{
+	position: fixed;
+	bottom: 0;
+	background-color: #ECEEF7;
+	width: 100%;
+}
+.distinguish{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1.3rem 0;
+	background-color: #ECEEF7;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.bottomLeft>h2{
+	color: #32456F;
+}
+.bottomLeft p{
+	color: #999999;
+}
+.bottomRight{
+	position: absolute;
+	bottom: 56px;
+	left: 50%;
+	margin-left: -46px;
+	margin-right: -46px;
+}
+.bottomRight #qrcode{
+	display: none;
+}
+.bottomRight #imagQrDiv{
+	width: 80px;
+	height: 80px;
+	padding: 0.4rem;
+	background-color: #FFFFFF;
+}
+.-mob-share-ui-button{
+	background-color: transparent !important;
+}
+.-mob-share-list{
+	top: 30% !important;
+}
+img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.weui-bar-nav .weui-title{
+	text-align: left;
+	left: 2rem;
+}
+.allImg{
+	position: absolute;
+	top: 0;
+}
+.weui-bar-nav{
+	background-color: transparent;
+}

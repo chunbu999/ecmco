@@ -1,0 +1,67 @@
+body, html {
+	height: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+.myAssetBy{
+	width: 100%;
+	position: relative;
+	z-index: 888;
+	background-color: #0D1728;
+}
+.myAssetBy>img{	
+	width: 100%;
+}
+#tab01,#listBox{
+    height: 100%;
+    overflow: auto;
+}
+
+#sellList li p:nth-child(1),.assetRecord li p:nth-child(1){
+	width: 26% !important;
+}
+#sellList li p:nth-child(2),.assetRecord li p:nth-child(2){
+	width: 38%;
+	/*text-align: center;*/
+}
+#sellList li p:nth-child(3),.assetRecord li p:nth-child(3){
+	width: 36% !important;
+}
+.myAssetBy .assetTxt{
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	width: 100%;
+}
+.assetRecord{
+	padding: 0 0.9rem 20px 0.9rem;
+}
+.assetRecord li{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #203353;
+	font-size: 14px;
+}
+.weui-form-preview{
+	background-color: transparent;
+}
+.myAssets{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	
+    margin-bottom: 45px;
+    /*overflow: hidden;*/
+}
+.weui-bar-nav{
+	background-color: transparent;
+}
+.weui-form-preview:after{
+	border: none;
+}
+.weui-form-preview:before{
+	border: none;
+}

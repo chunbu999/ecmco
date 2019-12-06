@@ -1,0 +1,58 @@
+#transferBox{
+	padding: 0 1rem;
+}
+#transferBox .weui-cell{
+	padding: 0;
+	border-bottom: none;
+}
+#transferBox .weui-input{
+	color: #333333;
+}
+#transferBox .weui-cell__bd{
+	border-radius: 6px;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.forgetDiv{
+	position: fixed;
+	bottom: 3.3rem;
+	width: 100%;
+}
+#transferBox .weui-cell__ft{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin-top: -8px;
+}
+.forgetDiv>button{
+	width: 91% !important;
+}
+.weui-cell_vcode .weui-cell__bd{
+	margin-right: 14px;
+}
+.weui-cells{
+	padding: 0 2.1rem;
+	background-color:transparent;
+}
+.weui-cells .weui-cell{
+	border-bottom: 1px solid #203353;
+	padding: 0.9rem 0 ;
+}
+.weui-cell_vcode .weui-cell__bd{
+	margin-right: 14px;
+}
+.weui-input::-webkit-input-placeholder{
+	font-size: 14px;
+}
+.weui-input::-moz-placeholder {
+	font-size: 14px;
+}
+.weui-input:-ms-input-placeholder{
+	font-size: 14px;
+}
+.weui-toast{
+	top: 40%;
+	left: 28%;
+}

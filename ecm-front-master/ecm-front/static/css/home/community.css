@@ -1,0 +1,125 @@
+body,html{
+	color: #666666;
+}
+#returnBtn>.weui-btns{
+	width: 45px;
+}
+#returnBtn{
+	position: fixed;
+}
+.communityBox{
+	padding: 0 0.9rem;
+	margin-top: 0.9rem;
+  	position: relative;
+	top: 70px;
+}
+.simpleBox,.weui-panel{
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	margin-bottom: 1.3rem;
+}
+.myInvite{
+	padding: 0.9rem 0.6rem;
+}
+#imgCopy{
+	margin-left: 0.4rem;
+	cursor: pointer;
+}
+.inviteAbove{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 1.3rem;
+}
+.inviteLeft span,.fourInvite h3{
+	color: #111111;
+}
+.inviteLeft ul li{
+	font-size: 13px;
+	line-height: 25px;
+}
+.inviteLeft span{
+	font-size: 12px;
+}
+.inviteright>a{
+	width: 90px;
+	padding: 0;
+	height: 35px;
+	line-height: 35px;
+	letter-spacing: 1px;
+}
+.fourInvite ul{
+	display: flex;
+	flex-direction: row;
+}
+.fourInvite ul li{
+	border: 1px solid #C8C8C8;
+	border-radius: 6px;
+	text-align: center;
+	width: 26%;
+	margin-right: 4px;
+	/*padding: 6px 0;*/
+	height: 6rem;
+	position: relative;
+	top: 0px;
+}
+.fourInvite ul li p{
+	font-size: 10px;
+	padding-top: 10px;
+}
+.fourInvite ul li:nth-last-child(1){
+	margin-right: 0px;
+}
+.fourInvite h3{
+	position: absolute;
+	bottom: 1.3rem;
+	text-align: center;
+	width: 100%;
+}
+.weui-panel__hd{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.pealTile{
+	margin-left: 0.3rem;
+}
+#container,#echartLine{
+	height: 25rem;
+}
+.weui-panel__bd{
+	padding: 0 0.6rem;
+}
+.monthDiv{
+	text-align: center;
+	width: 100%;
+	padding-bottom: 20px;
+}
+#table thead>tr{
+	border-bottom: #000000 solid 1px !important;
+}
+#table thead>tr>th,#table-two thead>tr>th{
+	color: #666666 !important;
+	font-weight: initial !important;
+}
+#table tbody>tr:nth-child(1){
+	border-top: 1px solid #DCDCDC !important;
+}
+.monthDiv tbody>tr{
+	color: #333333;
+}
+.monthDiv tbody>tr>td{
+	line-height: 30px;
+}
+.monthDiv thead>tr>th:nth-child(1){
+	text-align: left;
+}
+.monthDiv thead>tr>th:nth-last-child(1){
+	text-align: right;
+}
+.monthDiv tbody>tr>td:nth-child(1){
+	text-align: left;
+}
+.monthDiv tbody>tr>td:nth-last-child(1){
+	text-align: right;
+}

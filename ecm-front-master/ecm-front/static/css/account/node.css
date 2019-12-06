@@ -1,0 +1,31 @@
+.nodeOne{
+	padding: 2.5rem 1.3rem;
+}
+.nodeOne h4{
+	margin-bottom: 1.3rem;
+}
+.nodebox{
+	margin-bottom: 20px;
+}
+.condition li{
+	font-size: 14px;
+}
+.forgetDiv{
+	position: fixed;
+	bottom: 3.3rem;
+	width: 100%;
+}
+.forgetDiv>a{
+	width: 91% !important;
+}
+.appelDiv{
+	position: fixed;
+	bottom: 3.3rem;
+	width: 100%;
+}
+.appelDiv>button{
+	width: 91% !important;
+}
+.appelDiv>a{
+	width: 91% !important;
+}

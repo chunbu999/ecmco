@@ -1,0 +1,79 @@
+html{
+	height: 100%;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	background: url(../images/zhuce_di.png) no-repeat fixed center;
+	background-size: 100% 100%;
+	color: #FFFFFF;
+	
+}
+.registerName{
+	color: #DDB86A;
+	text-align: center;
+	margin-top: 3.4rem;
+}
+.weui-cells{
+	background-color: transparent;
+	padding: 0 2.2rem;
+	margin-top: 4.3rem;
+}
+.weui-cells>h3{
+	color: #FFFFFF;
+}
+.coinNum,.addTxt{
+	color: #DDB86A;
+}
+.trantImg{
+	margin:0 8px;
+}
+.formInput{
+	margin-top: 1.9rem;
+}
+.formInput .weui-cell{
+	border-bottom: 1px solid #DDB86A;
+	height: 3rem;
+	padding: 0;
+	margin-bottom: 0.6rem;
+}
+.weui-cell_vcode .weui-cell__bd{
+	margin-right: 14px;
+}
+.fotgetCode>input,.fotgetCode>input:focus{
+	border-radius: 4px;
+	background-color: #DDB86A !important;
+	color: #FFFFFF;
+	border: none;
+	margin-top: 12px;
+	height: 1.9rem;
+	padding: 0 1.3rem;
+	cursor:pointer;
+	outline: none !important;
+}
+.weui-cell__ft{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin-top: -8px;
+}
+.forgerB{
+	margin-top: 3.8rem;
+	color: #999999;
+}
+.forgerB>a{
+	color: #DDB86A;
+}
+.mybgBtn{
+	width: 100%;
+	background-color: #DDB86A;
+}
+.weui-input::-webkit-input-placeholder{
+	font-size: 14px;
+}
+.weui-input::-moz-placeholder {
+	font-size: 14px;
+}
+.weui-input:-ms-input-placeholder{
+	font-size: 14px;
+}
+

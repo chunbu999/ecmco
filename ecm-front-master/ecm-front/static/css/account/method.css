@@ -1,0 +1,111 @@
+.weui-cells{
+	background-color: #0F1B2F !important;
+}
+.methodDiv{
+	position: absolute;
+	bottom: 1.8rem;
+	width: 88%;
+	padding: 0 1.3rem;
+}
+.methodDiv>button{
+	width: 100% !important;
+	margin: 0 !important;
+	font-size: 15px;
+}
+#bankBox .weui-label{
+	width: 8rem;
+}
+#bindqrode{
+	display: none;
+}
+#updataNick{
+	background-color: transparent !important;
+}
+#updataNick .weui-cell{
+	background-color:#0D1728 !important;
+	margin: 0 1.3rem;
+	border-bottom: 1px solid #203353;
+}
+.methodOne .borderBotn{
+	border-bottom: 1px solid #16253F;
+}
+.methodOne .weui-label,.weui-uploader__title{
+	font-size: 15px;
+}
+.weui-input::-webkit-input-placeholder{
+	font-size: 14px;
+}
+.weui-input::-moz-placeholder {
+	font-size: 14px;
+}
+.weui-input:-ms-input-placeholder{
+	font-size: 14px;
+}
+.appealTet textarea{
+	background-color: transparent;
+	border: 1px dashed #0A59DA;
+	width: 88%;
+	margin-top: 0.6rem;
+	padding: 1.3rem;
+	color: #FFFFFF;
+	outline: none;
+}
+.appealTet .weui-cell__hd{
+	width: 100% !important;
+}
+.boxDiv .txtP{
+	color: #999999;
+}
+.checkImg{
+	color: #DDB86A;
+}
+.recordList>ul{
+	padding: 0 0.9rem;
+	margin-top: 1.3rem;
+}
+.recordList>ul>li{
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.boxDiv{
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	padding: 0.6rem;
+	color: #666666;
+	font-size: 14px;
+}
+.boxDiv ul>li{
+	line-height: 30px;
+}
+.appelDiv{
+	padding: 0 0.9rem;
+}
+.appelDiv>button{
+	width: 100%;
+}
+
+.weui-toast{
+	left: 30%;
+}
+#tabtxt{
+	height: 100%;
+    overflow: auto;
+    padding-bottom: 60px;
+}
+.weui-bar-nav{
+	background-color: #0D1728;
+}
+.weui-form-preview:before,.weui-form-preview:after{
+	border: none;
+}
+.weui-form-preview{
+	background: transparent;
+}
+#buydiv{
+	position: relative;
+}
+#selectBox{
+	position: absolute;
+	width: 100%;
+	top: 0;
+}

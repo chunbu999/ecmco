@@ -1,0 +1,117 @@
+html,body{
+	font-size: 12px !important;
+}
+.weui-navbar{
+	background-color: #0F1B2F !important;
+}
+.weui-navbar a{
+	font-size: 12px;
+}
+.weui-navbar>a:focus,.weui-navbar>a{
+	background-color: #0F1B2F !important;
+}
+.weui-bar__item--on,.weui-bar__item--on:focus{
+	color: #DDB86A;
+	background-color: #0F1B2F !important;
+	border-bottom: 1px solid #DDB86A !important;
+}
+.ranking{
+	padding: 0 0.9rem;
+}
+.ranking ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	top: 2.5rem;
+}
+.ranking ul li{
+	width: 32%;
+	text-align: center !important;
+}
+.ranking ul li>img{
+	width: 100%;
+}
+.ranking ul li:nth-child(2){
+	position: relative;
+	top: -1.6rem;
+}
+.ranking ul li:nth-child(2) .brandtxt{
+	width: 100%;
+}
+.brandtxt{
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	width: 32%;
+}
+.brandtxt .names{
+	color: #999999;
+}
+.brandtxt p{
+	font-size: 12px;
+}
+.rankNum{
+	text-align: right;
+	margin: 10px 20px 10px 0;
+}
+.rankNum>span,.indexNum b{
+	color: #DDB86A;
+}
+.indexNum span{
+	padding-left: 20px;
+}
+.rankList{
+	padding: 0 1.3rem;
+	margin-top: 1.6rem;
+}
+.rankList ul li{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 4.2rem;
+	line-height: 4.2rem;
+	border-bottom: 1px solid #203353;
+}
+/*.rankList ul li:nth-child(7) p:nth-last-child(2){
+	margin-left: -8px;
+}*/
+.rankList ul li p{
+	font-size: 12px;
+}
+
+.rankBox{
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+    
+    /*height: 100%;
+    overflow: auto; */
+}
+.threeBox{
+	top: 60px;
+	margin-bottom: 25px;
+}
+.oneBox{
+	top: 20px;
+	margin-bottom:0;
+}
+#tab1{
+	/*padding: 0 0.9rem 20px 0.9rem;*/
+	width: 100%;
+}
+.threeBox #tab1{
+	margin-top: 60px;
+}
+.rankList{
+	height: 100%;
+    overflow: auto; 
+}
+.voteActivty,.threeRank{
+	position: fixed;
+	width: 100%;
+}
+.ranking .nodata{
+	display: block;
+	width: 100%;
+}

@@ -1,0 +1,183 @@
+#returnBtn{
+	position: fixed;
+}
+.inviteBox{
+	padding: 0 0.9rem;
+	margin-top: 0.9rem;
+  	position: relative;
+	top: 70px;
+	left: 0;
+}
+.inviteImg,.inviteImg>img{
+	width: 100%;
+}
+.brandtxt p{
+	font-size: 12px;
+}
+.ranking ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	top: 2.5rem;
+}
+.ranking ul li{
+	width: 32%;
+	text-align: center !important;
+}
+.ranking ul li>img{
+	width: 100%;
+}
+.ranking ul li:nth-child(2){
+	position: relative;
+	top: -1.6rem;
+}
+.ranking ul li:nth-child(2) .brandtxt{
+	width: 100%;
+}
+.brandtxt{
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	width: 32%;
+}
+.brandtxt .names{
+	color: #999999;
+	margin-bottom: 6px;
+}
+.check_pain{
+	color: #DDB86A;
+	border: 1px solid #DDB86A;
+	margin-top: 1.8rem;
+	font-size: 12px
+}
+.entering{
+	position: relative;
+	top: 1.3rem;
+}
+.entering>img{
+	width: 100%;
+}
+.entering .enterbtns{
+	position: absolute;
+	bottom: 1.6rem;
+	width: 100%;
+}
+.entering .weui-btn{
+	background-color: #DDB86A;
+	margin: 0 auto !important;
+}
+.copyDiv{
+	background-color: #0F1B2F;
+	margin-top: 1.7rem;
+	padding: 0.6rem;
+	margin-bottom: 1.3rem;
+}
+.copytxt{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.copytxt>input{
+	color: #DDB86A;
+	border: none;
+	width: 7.5rem;
+	margin-top: 0.2rem;
+	background-color: #0F1B2F;
+	font-size: 1rem;
+	outline: none;
+	position: absolute;
+	top: -1000000px;
+}
+#copy-pp{
+	color: #DDB86A;
+	font-size: 1rem;
+}
+#link-pp{
+	position: absolute;
+	top: -8888px;
+  	font-size: 12px;
+}
+.copytxt>button{
+	display: inline-block;
+	background-color: #DDB86A !important;
+	width: 5rem;
+	height: 1.8rem;
+	line-height: 1.8rem !important;
+	padding: 0px 16px;
+	font-size: 14px;
+	margin-left: 1.9rem;
+}
+.copytxt>button>img{
+	margin-right: 0.3rem;
+}
+.copybtn{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1.3rem 0 0rem 0;
+}
+.addShip{
+	background-color: #DDB86A;
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 10px;
+	padding: 0;
+}
+.poster{
+	background-color: #474E6C;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 0 !important;
+	padding: 0;
+}
+.weui-dialog__hd{
+	display: none;
+}
+.weui-dialog__bd{
+	padding: 0;
+}
+#dialog,.weui-dialog{
+	position: fixed;
+	left: 60px;
+    right: 60px;
+}
+#dialog2{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.weui_dialog{
+	padding: 40px 40px 20px 40px;
+}
+.qrcode{
+	border: solid 1px #C8C8C8;
+	width: 150px;
+	height: 150px;
+	padding: 6px;
+}
+.qrcode>img{
+	width: 100%;
+	height: 100%;
+}
+.deleteDiv{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.modalTxt{
+	margin-bottom: 40px;
+	color: #333333;
+	font-size: 14px;
+}
+.copy-link{
+	position: absolute;
+	top: -1000px;
+}
+#copyBtn{
+	cursor: pointer;
+}

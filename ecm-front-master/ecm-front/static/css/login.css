@@ -1,0 +1,325 @@
+.icon-search {
+	background: url(../images/用户.png) no-repeat;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	top:38%;
+	left: -5%;
+	background-size:60%;
+}
+.icon-searchs {
+	background: url(../images/密码.png) no-repeat;
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	top:38%;
+	left: -5%;
+	background-size:60%;
+}
+
+#login_o{
+	background:url(../images/登录圆背景深色图.png) no-repeat right bottom;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 95%;
+    max-height: 90%;
+	background-size:100% 100%;
+	
+}
+#a_res{
+	color: rgb(46, 149, 246);
+}
+
+body,html{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: #999999;
+	background:url(../images/登录.png) no-repeat;
+    width:100%;
+    height:100%;
+    background-size:100% 100%;
+	font-family:'思源黑体 CN';
+
+}
+::-webkit-input-placeholder {
+	color: #999999;
+	font-family:'思源黑体 CN';
+  }
+  :-moz-placeholder {/* Firefox 18- */
+	color: #999999;
+	font-family:'思源黑体 CN';
+  }
+  ::-moz-placeholder{/* Firefox 19+ */
+   color: #999999;
+   font-family:'思源黑体 CN';
+  }
+  :-ms-input-placeholder {
+	color: #999999;
+	font-family:'思源黑体 CN';
+  }
+
+.addTxt>b{
+	font-weight: inherit;
+}
+.weui-cells{
+	padding: 0 2.1rem;
+	background-color:transparent;
+}
+.weui-cells .weui-cell{
+	border-bottom: 1px solid #DCDCDC;
+	padding: 0.9rem 0 ;
+	
+	
+}
+.LoginName{
+	color: #DDB86A;
+	font-size: 28px;
+	letter-spacing: 2px;
+	margin: 6rem 0 3rem 0;
+}
+#showPicker{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#registerTel,#loginTel,#loginTel:focus{
+	padding-left: 10px;
+	background-color: transparent !important;
+}
+#showPicker,.forgerB>a,.registerB>a,.forgerBtn>a{
+	color: #696969;
+}
+.registerB{
+	position: absolute;
+	left: 30%;
+	top:82%;
+	font-size: 12px;
+	color: #2C2D30;
+}
+.formInput{
+	margin-bottom: 5rem;
+	padding-top: 65%;
+	padding-right: 10%;
+	padding-left: 10% ;
+	}
+.mybgBtn{
+	
+	position: absolute;
+	top:73%;
+	left: 10%;
+	width: 80%;
+	height: 10%;
+	background: url(../images/蓝登录.png) no-repeat;
+	letter-spacing: 2px;
+	max-width: 100%;
+    max-height: 100%;
+	background-size:100% 100%;
+}
+.forgerB{
+	font-size: 12px;
+	position: absolute;
+	top: 70.5%;
+	right: 14%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.forgerB>a{
+	text-align: right;
+}
+.trantImg{
+	margin:0 8px;
+	width: 6.5px;
+	height: 5px;
+}
+.weui-toast{
+	width: 11rem;
+	padding: 15px 20px;
+	text-align: center;
+}
+#getCode,#getCode:focus{
+	outline: none;
+	background-color: transparent !important;
+	cursor:pointer;
+}
+.weui-toast_content{
+	font-size: 1rem;
+}
+.weui-cell__ft>input{
+	height: 100%;
+	display: inline-block;
+	width: 100%;
+	padding: 0 20px;
+	background-color: transparent !important;
+	border: none !important;
+	color: #DDB86A;
+	letter-spacing: 2px;
+}
+#twoBox{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.line{
+	height: 16px;
+	display: inline-block;
+	border: 0.5px solid #DDB86A !important;
+}
+#forgetBox .fotgetCode>input{
+	border-radius: 6px;
+	background-color: #DDB86A !important;
+	color: #FFFFFF;
+	outline: none;
+}
+/*忘记密码*/
+#forgetBox{
+	padding: 0 1rem;
+}
+#forgetBox .weui-cell{
+	padding: 0;
+	border-bottom: none;
+}
+#forgetBox .weui-cell__bd{
+	border-radius: 6px;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.forgetDiv{
+	position: fixed;
+	bottom: 3.3rem;
+	width: 100%;
+}
+#forgetBox .weui-cell__ft{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin-top: -8px;
+}
+.forgetDiv>button{
+	width: 91% !important;
+}
+.weui-cell_vcode .weui-cell__bd{
+	margin-right: 14px;
+}
+#forgetNew>.mybgBtn{
+	position: relative;
+	bottom: 20px;
+}
+#forgetNew .fotgetCode>input{
+	background-color: transparent !important;
+	color: #DDB86A;
+}
+/*注册*/
+.registerBox,#forgetNew{
+	padding: 0 1rem;
+}
+.registerBox #register01,.registerBox #register02,#register03,.lastRegister,#forgetNew .mybgBtn{
+	position: fixed;
+	bottom: 60px;
+	width: 91% !important;
+	font-size: 16px;
+}
+.weui-bar-nav{
+	top: 0;
+	height: 3rem;
+    line-height: 3rem;
+    background-color: #0F1B2F;
+    color: #ffffff
+}
+.weui-bar{
+	position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 2.25rem;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 24px;
+}
+.weui-bar-nav .weui-btns {
+    position: relative;
+    z-index: 20;
+    height: 3rem;
+    line-height: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    border-radius: 0.1rem;
+    border-width: 0;
+    background: transparent !important;
+}
+.weui-bar-nav .weui-pull-left {
+    padding: 0 0.5rem;
+    font-weight: 400;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.weui-bar-nav .weui-title {
+    min-height: 2.25rem;
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    right: 5rem;
+    left: 5rem;
+    width: auto;
+    padding-top: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 2;
+    top: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.weui-cell__fts{
+	padding-left: 16px;
+    position: relative;
+}
+.weui-cell__fts:after{
+	content: " ";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-width: 2px 2px 0 0;
+    border-color: #FFFFFF;
+    border-style: solid;
+    -webkit-transform: matrix(-0.707107,-0.707107,0.707107,-0.707107,0,0);
+    transform: matrix(-0.707107,-0.707107,0.707107,-0.707107,0,0);
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 0;
+}
+.weui-input::-webkit-input-placeholder{
+	font-size: 14px;
+}
+.weui-input::-moz-placeholder {
+	font-size: 14px;
+}
+.weui-input:-ms-input-placeholder{
+	font-size: 14px;
+}
+.weui-input{
+	color: #696969;
+}
+/*修改登录密码*/
+.updatepwd .weui-input,.traderpwd .weui-input{
+	color: #333333;
+}

